@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: url('pexels-fwstudio-33348-164005.jpg') no-repeat center center;
+
+}
+
+
+.sticky-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: radial-gradient(ellipse, white, #333);
+    text-shadow: 0 0 5px #333, 0 0 10px #333, 0 0 20px #333, 0 0 30px #333;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
+.sticky-menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 30px;
+    transition: color 0.3s, text-shadow 0.3s;
+    display: inline-block;
+
+
+}
+
+.sticky-menu a:hover {
+    color: #ffcc00;
+    animation: color-flicker 1s infinite, shake 0.5s infinite;
+    text-shadow:
+        0 0 5px #ff5722,
+        0 0 10px #ff5722,
+        0 0 15px #ff5722;
+}
+
+
+
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    /* Başla  */
+    25% {
+        transform: translate(-2px, 0);
+    }
+
+    /* Sol */
+    50% {
+        transform: translate(2px, 0);
+    }
+
+    /* Sağ */
+    75% {
+        transform: translate(-2px, 0);
+    }
+
+    /* Sol */
+    100% {
+        transform: translate(0, 0);
+    }
+
+    /* basa don */
+}
+
+
+.transparent-background {
+    background: url('pexels-thepaintedsquare-583848.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 50px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    color: transparent;
+    -webkit-text-stroke: 0.8px #333;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 20px;
+    transform: scale(1);
+    accent-color: #ff5722;
+    cursor: pointer;
+}
+
+
+form input:focus,
+form select:focus {
+    border-color: #ff5722;
+    outline: none;
+    box-shadow: 0 0 10px 3px rgba(255, 87, 34, 0.6);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+
+}
+
+
+form button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #e64a19;
+}
+
+
+#stickyAd {
+    position: fixed;
+    right: 15px;
+    bottom: 100px;
+    height: 400px;
+    width: 140px;
+    padding: 40px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+#stickyAd img {
+    max-width: 100%;
+    border-radius: 4px;
+    height: 400px;
+    width: 300px;
+}
+
+#stickyAd button {
+    margin-top: 0px;
+    padding: 8px 8px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#stickyAd button:hover {
+    background: #ff5722;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f4f4f4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+section:hover {
+    box-shadow: 0 0 10px #ff9800, 0 0 20px #ff9800, 0 0 40px #ff9800, 0 0 60px #ff9800;
+    border: 2px solid #ff9800;
+}
+
+.map-container {
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.connect-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    text-align: center;
+    color: yellow;
+    text-shadow:
+        0 0 5px yellow,
+        0 0 10px yellow,
+        0 0 20px yellow,
+        0 0 20px orange,
+        0 0 30px orange,
+        0 0 40px red;
+}
+
+.connect-message h1 {
+    animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+    0% {
+        text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px orange, 0 0 40px orange, 0 0 50px red;
+    }
+
+    50% {
+        text-shadow: 0 0 3px yellow, 0 0 7px yellow, 0 0 15px orange, 0 0 20px orange, 0 0 25px red;
+    }
+
+    100% {
+        text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px orange, 0 0 40px orange, 0 0 50px red;
+    }
+}
+
+.connect-message h1,
+.connect-message p {
+    margin: 20px 0;
+}
+
+.connect-message a {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: yellow;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.connect-message a:hover {
+    background: orange;
+    color: white;
+}

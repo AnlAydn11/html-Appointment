@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Appointment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="sticky-menu">
+            <a href="#top"><b>Home</b></a>
+            <a href="#about"><b>About</b></a>
+            <a href="#services"><b>Services</b></a>
+            <a href="#contact"><b>Contact</b></a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="transparent-background">
+            <form id="appointmentForm" action="connect.html" method="post">
+                <h2><b></b>EDUCATION APPOINTMENT FORM</h2>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="city">City:</label>
+                <select id="city" name="city" required>
+                    <option value="" disabled selected>Select your city</option>
+                </select>
+
+                <label for="course">Courses:</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select course </option>
+                </select>
+
+                <h3>How would you like to be located ? </h3>
+
+                <select id="secim" name="secim" required>
+                    <option value="" disabled selected>By Phone</option>
+                </select>
+
+                <select id="saat" name="saat" required>
+                    <option value="" disabled selected>Hours : 6 AM - 7 PM </option>
+                </select>
+
+                <br />
+                <br />
+
+                <label>
+                    I Agree to the <u>Terms & Conditions</u><input type="checkbox" id="terms" required>
+                </label>
+
+
+
+
+                <button type="submit">Request an Appointment</button>
+            </form>
+
+            <div id="stickyAd">
+                <a href="https://www.nike.com/tr/" target="_blank">
+                    <img src="KD.jpeg" alt="Ad">
+                </a>
+
+
+                <button id="closeAd">X</button>
+
+            </div>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+
+    <div class="section-container">
+        <section id="about">
+            <h2>About Us ℹ️</h2>
+            <p> We are here to simplify educational appointments, connecting students, parents, and educators
+                seamlessly. Our platform ensures an efficient and stress-free scheduling process, empowering meaningful
+                connections and enhancing communication in education. Join us in making appointments effortless for a
+                better learning experience.</p>
+            <img src="pexels-divinetechygirl-1181395.jpg" alt="Educational Connections"
+                style="width: 100%; height: 200px; object-fit: cover;">
+        </section>
+        </section>
+
+        <section id="services">
+            <h2>Services 💻</h2>
+            <ul>
+                <li>Personalized Appointments: Book tailored meetings based on your needs, including academic
+                    consultations, course guidance, or educational counseling.
+                </li>
+                <li>City-Based Selection: Choose your preferred location to connect with local educators or
+                    institutions.
+
+                </li>
+                <li>Flexible Scheduling Options: Select available time slots from 6 AM to 7 PM to fit your daily
+                    routine.
+                </li>
+                <li>
+                    Course Selection: Explore and choose from a wide variety of courses that match your interests and
+                    goals.
+                </li>
+                <li>
+                    Multiple Contact Methods: Opt to be contacted via phone or other communication channels for
+                    convenience.
+                </li>
+                <li>
+                    Terms & Conditions Compliance: Ensure a transparent and secure experience by agreeing to our clear
+                    guidelines before proceeding.
+                </li>
+            </ul>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us 📍</h2>
+            <p>Email: random_email@example.com</p>
+            <p>Phone: +555 555 555</p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15818.753225143226!2d27.196017625435676!3d38.45608328655895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1731764997577!5m2!1str!2str"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </iframe>
+            </div>
+        </section>
+    </div>
+
+
+
+</body>
+
+</html>
